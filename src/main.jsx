@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
@@ -12,3 +12,7 @@ createRoot(document.getElementById('root')).render(
 )
 
 
+// // const myElemnt = <h1 style={{color: 'blue'}}>I love JSX</h1>;
+// const myElemnt = React.createElement('h1', null, 'Creact by react');
+// const root = createRoot(document.getElementById('root'));
+// root.render(myElemnt);
