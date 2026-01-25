@@ -3,6 +3,8 @@ import ReactLogo from './assets/react.svg'
 import LoginButton from './components/LoginButton'
 import SubmitButton, {SubmitNameButton} from './components/SubmitButton'
 import Profile, {Profile as NewProfile} from "./components/Profile"
+import Avatar from './components/Avatar'
+
 // const JSXrule = () => {
 //   // // ------JSX rule 3------
 //   // return (
@@ -59,13 +61,23 @@ import Profile, {Profile as NewProfile} from "./components/Profile"
 // }
 
 
+// const JSXrule = () => {
+//   return(
+//     <div>
+//       {/* <Avatar1/> */}
+//       <Profile/>
+//       <hr />
+//       <NewProfile/>
+//     </div>
+//   )
+// }
+
+// export default JSXrule
+
 const JSXrule = () => {
   return(
     <div>
-      {/* <Avatar1/> */}
-      <Profile/>
-      <hr />
-      <NewProfile/>
+      <Avatar/>
     </div>
   )
 }

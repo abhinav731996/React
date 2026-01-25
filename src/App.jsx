@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import JSXrule from './JSXrule'
+import Task1 from './Task1' 
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -34,8 +35,15 @@ import JSXrule from './JSXrule'
 // }
 
 
+// function App() {
+//    return <JSXrule/>
+  
+// }
+// export default App
+
 function App() {
-  return <JSXrule/>
+  return <Task1/>
+  
 }
 export default App
 
