@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import JSXrule from './JSXrule'
 import Task1 from './Task1' 
+import SubmitButton from './components/SubmitButton'
+
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -41,10 +43,23 @@ import Task1 from './Task1'
 // }
 // export default App
 
-function App() {
-  return <Task1/>
+
+
+// ------------- TASK-1 ---------------
+
+// function App() {
+//   return <Task1/>
   
+// }
+// export default App
+
+
+
+function App() {
+  return( 
+    <div>
+      <SubmitButton text="Submit Now" className="primary"/>
+    </div>
+    )
 }
 export default App
-
-

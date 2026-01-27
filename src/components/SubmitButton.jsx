@@ -9,9 +9,20 @@ const SubmitButton = () => {
 export default SubmitButton
 
 // ---- Named Export ----
-export const SubmitNameButton = () => {
-    return <button>Name Export Button</button>
+// export const SubmitNameButton = () => {
+//     return <button>Name Export Button</button>
+// }
+
+export const SubmitNameButton = ({ text, className}) => {
+  <>
+  return <button className={className}>{text} </button>
+  {/* <input type="button" className={className} value={text} /> */}
+  <SubmitButton text="Submit Now" className="primary"/>
+  
+  </>
+
 }
+
 
 // ---------- Method 2 - Class component ----------------
 // import React, { PureComponent } from 'react'
