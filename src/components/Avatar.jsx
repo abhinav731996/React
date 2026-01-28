@@ -1,6 +1,6 @@
 import React from 'react'
 
-// Child component
+// Child component 
 export const Avatar1 = () => {
   return (
     <img width={100} src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" alt="profile"/>
