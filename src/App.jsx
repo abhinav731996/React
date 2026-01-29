@@ -5,7 +5,8 @@ import './App.css'
 import JSXrule from './JSXrule'
 import Task1 from './Task1' 
 import SubmitButton from './components/SubmitButton'
-
+import {PropProfile} from './components/PropProfile'
+import Task2 from './Task2'
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -54,12 +55,79 @@ import SubmitButton from './components/SubmitButton'
 // export default App
 
 
+// ---------------- props -----------------
+// function App() {
+//   return( 
+//     <div>
+//       <SubmitButton text="Submit Now" className="primary"/>
+//     </div>
+//     )
+// }
+// export default App
+
+
+// function App() {
+
+//   // String but url
+//     const image = "https://img.freepik.com/premium-vector/business-woman-character-vector-illustration_1133257-2432.jpg?semt=ais_hybrid&w=740&q=80"
+
+//   // String
+//     const name =  "Sahil Kumar"
+
+//   // Number
+//     const age =  33
+
+//   // Bullean or logical type
+//     const online = true
+
+//   // Date
+//     const joinigDate = new Date()
+
+//   // Array
+//     const skills = ["React",  "HTMLAllCollection", "JavaScript"]
+
+//   //Array objects
+//   const experience = [
+//     {id: 1, jobProfile: "Jr Developer", year: 2000},
+//     {id: 2, jobProfile: "Sr Developer", year: 2015},
+//     {id: 3, jobProfile: "Team Lead", year: 2020},
+//   ]
+
+
+//     const handleClick = ()=> {
+//     alert("This is alert from App.jsx")
+//   }
+
+
+//   return( 
+//     <div>
+//       <PropProfile
+//       image = {image}
+//       name = {name}
+//       age = {age}
+//       online = {online}
+//       joinigDate = {joinigDate}
+//       skills = {skills}
+//       experience = {experience}
+//       onclick = {handleClick}
+//       />
+
+//       <button onClick={handleClick}>Click Here</button>
+//     </div>
+//     )
+// }
+// export default App
+
+
+// ------------ Task-2 -------------
+import React from 'react'
 
 function App() {
-  return( 
+  return (
     <div>
-      <SubmitButton text="Submit Now" className="primary"/>
+      <Task2/>
     </div>
-    )
+  )
 }
+
 export default App
