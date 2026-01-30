@@ -7,7 +7,7 @@ import Task1 from './Task1'
 import SubmitButton from './components/SubmitButton'
 import {PropProfile} from './components/PropProfile'
 import Task2 from './Task2'
-
+import Hooks from './Hooks'
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -120,12 +120,24 @@ import Task2 from './Task2'
 
 
 // ------------ Task-2 -------------
+// import React from 'react'
+
+// function App() {
+//   return (
+//     <div>
+//       <Task2/>
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
 
 function App() {
   return (
     <div>
-      <Task2/>
+      <Hooks/>
     </div>
   )
 }

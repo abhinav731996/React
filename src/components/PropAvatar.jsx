@@ -1,13 +1,13 @@
 import React from 'react'
 
-export const Profile = ()=>{
+export const Avatar = ({image})=>{
     return(
-    <img width={100} src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png" alt="profile"/>
+    <img width={100} src = {image}/>
     )
 }
 
 
-const PropAvatar = ({ name, email, phone}) => {
+const PropAvatar = ({image, name, email, phone}) => {
 
   return (
     <div>
@@ -15,7 +15,7 @@ const PropAvatar = ({ name, email, phone}) => {
         <tbody>
           <tr>
             <td rowSpan={3}>
-              <Profile />
+              <Avatar image={image} />
             </td>
             <th>Name</th>
             <td>{name}</td>
