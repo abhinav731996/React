@@ -8,6 +8,8 @@ import SubmitButton from './components/SubmitButton'
 import {PropProfile} from './components/PropProfile'
 import Task2 from './Task2'
 import Hooks from './Hooks'
+import Task3 from './Task3'
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -132,14 +134,35 @@ import Hooks from './Hooks'
 
 // export default App
 
+
+// ----------- Hooks -------------
+
+// import React from 'react'
+
+// function App() {
+//   return (
+//     <div>
+//       <Hooks/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// --------------- Task3 ---------------
+
 import React from 'react'
 
 function App() {
   return (
     <div>
-      <Hooks/>
+      <Task3/>
     </div>
   )
 }
 
 export default App
+
+

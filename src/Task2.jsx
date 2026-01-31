@@ -1,5 +1,6 @@
 import React from 'react'
 import PropAvatar from './components/PropAvatar'
+
 const Task2 = () => {
 
   return (
@@ -17,8 +18,8 @@ const Task2 = () => {
         email = "sam@gmail.com"
         phone = "9874563210"
       />
-      {/* <PropAvatar
-      image="https://randomuser.me/api/portraits/men/32.jpg"/> */}
+      <PropAvatar
+      image="https://randomuser.me/api/portraits/men/32.jpg"/>
     </div>
   )
 }

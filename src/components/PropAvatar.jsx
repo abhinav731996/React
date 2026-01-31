@@ -7,7 +7,11 @@ export const Avatar = ({image})=>{
 }
 
 
-const PropAvatar = ({image, name, email, phone}) => {
+const PropAvatar = ({   
+    image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGOYxtswPRatXeY5Q_PN0Vtwj1rljMH9fXMg&s", 
+    name = "Default",
+    email = "default@gmail.com", 
+    phone = "+91 **********"}) => {
 
   return (
     <div>
