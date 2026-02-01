@@ -122,17 +122,17 @@ import Task3 from './Task3'
 
 
 // ------------ Task-2 -------------
-// import React from 'react'
+import React from 'react'
 
-// function App() {
-//   return (
-//     <div>
-//       <Task2/>
-//     </div>
-//   )
-// }
+function App() {
+  return (
+    <div>
+      <Task2/>
+    </div>
+  )
+}
 
-// export default App
+export default App
 
 
 // ----------- Hooks -------------
@@ -153,16 +153,16 @@ import Task3 from './Task3'
 
 // --------------- Task3 ---------------
 
-import React from 'react'
+// import React from 'react'
 
-function App() {
-  return (
-    <div>
-      <Task3/>
-    </div>
-  )
-}
+// function App() {
+//   return (
+//     <div>
+//       <Task3/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
