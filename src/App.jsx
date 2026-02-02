@@ -122,32 +122,32 @@ import Task3 from './Task3'
 
 
 // ------------ Task-2 -------------
-import React from 'react'
-
-function App() {
-  return (
-    <div>
-      <Task2/>
-    </div>
-  )
-}
-
-export default App
-
-
-// ----------- Hooks -------------
-
 // import React from 'react'
 
 // function App() {
 //   return (
 //     <div>
-//       <Hooks/>
+//       <Task2/>
 //     </div>
 //   )
 // }
 
 // export default App
+
+
+// ----------- Hooks -------------
+
+import React from 'react'
+
+function App() {
+  return (
+    <div>
+      <Hooks/>
+    </div>
+  )
+}
+
+export default App
 
 
 
