@@ -137,12 +137,28 @@ import Task3 from './Task3'
 
 // ----------- Hooks -------------
 
+// import React from 'react'
+
+// function App() {
+//   return (
+//     <div>
+//       <Hooks/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// --------------- Task3 ---------------
+
 import React from 'react'
 
 function App() {
   return (
     <div>
-      <Hooks/>
+      <Task3/>
     </div>
   )
 }
@@ -151,18 +167,16 @@ export default App
 
 
 
-// --------------- Task3 ---------------
-
+// ----------- reducer -----------
 // import React from 'react'
+// import UseReduser from './UseReduser'
 
 // function App() {
 //   return (
 //     <div>
-//       <Task3/>
+//       <UseReduser/>
 //     </div>
 //   )
 // }
 
 // export default App
-
-
