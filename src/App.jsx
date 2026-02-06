@@ -153,17 +153,17 @@ import Task3 from './Task3'
 
 // --------------- Task3 ---------------
 
-import React from 'react'
+// import React from 'react'
 
-function App() {
-  return (
-    <div>
-      <Task3/>
-    </div>
-  )
-}
+// function App() {
+//   return (
+//     <div>
+//       <Task3/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 
@@ -175,6 +175,42 @@ export default App
 //   return (
 //     <div>
 //       <UseReduser/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// -------------- Styling react app --------------
+
+import React from 'react'
+import HeadingStyle from './HeadingStyle'
+import Dashboard from './page/Dashboard'
+import "./assets/css/dashboard.module.css"
+
+function App() {
+  return (
+    <div>
+      <HeadingStyle/>
+      <Dashboard/>
+    </div>
+  )
+}
+
+export default App
+
+
+
+// ----------- Task-4 ----------------
+
+// import React from 'react'
+// import Task4 from './Task4'
+
+// function App() {
+//   return (
+//     <div>
+//       <Task4/>
 //     </div>
 //   )
 // }
