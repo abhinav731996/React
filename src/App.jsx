@@ -7,7 +7,6 @@ import Task1 from './Task1'
 import SubmitButton from './components/SubmitButton'
 import {PropProfile} from './components/PropProfile'
 import Task2 from './Task2'
-import Hooks from './Hooks'
 import Task3 from './Task3'
 
 // function App() {
@@ -138,6 +137,7 @@ import Task3 from './Task3'
 // ----------- Hooks -------------
 
 // import React from 'react'
+// import Hooks from './Hooks'
 
 // function App() {
 //   return (
@@ -184,35 +184,35 @@ import Task3 from './Task3'
 
 // -------------- Styling react app --------------
 
-import React from 'react'
-import HeadingStyle from './HeadingStyle'
-import Dashboard from './page/Dashboard'
-import "./assets/css/dashboard.module.css"
-
-function App() {
-  return (
-    <div>
-      <HeadingStyle/>
-      <Dashboard/>
-    </div>
-  )
-}
-
-export default App
-
-
-
-// ----------- Task-4 ----------------
-
 // import React from 'react'
-// import Task4 from './Task4'
+// import HeadingStyle from './HeadingStyle'
+// import Dashboard from './page/Dashboard'
+// import "./assets/css/dashboard.module.css"
 
 // function App() {
 //   return (
 //     <div>
-//       <Task4/>
+//       <HeadingStyle/>
+//       <Dashboard/>
 //     </div>
 //   )
 // }
 
 // export default App
+
+
+
+// ----------- Task-4 ----------------
+
+import React from 'react'
+import Task4 from './Task4'
+
+function App() {
+  return (
+    <div>
+      <Task4/>
+    </div>
+  )
+}
+
+export default App
