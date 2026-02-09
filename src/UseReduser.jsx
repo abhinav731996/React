@@ -41,8 +41,8 @@ const UseReduser = () => {
       <br />
       {/* <button onClick={handleIncrement}>Increment</button>{" "}
       <button onClick={handleDecrement}>Decrement</button> */}
-      <button onClick={() => dispatch({type: "INCREMENT"})}>Increment</button>{" "}
-      <button onClick={() => dispatch({type: "DECREMENT"})}>Decrement</button>
+      <button className='btn btn-primary' onClick={() => dispatch({type: "INCREMENT"})}>Increment</button>{" "}
+      <button className='btn btn-secondary' onClick={() => dispatch({type: "DECREMENT"})}>Decrement</button>
     </div>
   )
 }

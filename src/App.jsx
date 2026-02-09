@@ -184,35 +184,39 @@ import Task3 from './Task3'
 
 // -------------- Styling react app --------------
 
-// import React from 'react'
-// import HeadingStyle from './HeadingStyle'
-// import Dashboard from './page/Dashboard'
-// import "./assets/css/dashboard.module.css"
-
-// function App() {
-//   return (
-//     <div>
-//       <HeadingStyle/>
-//       <Dashboard/>
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-
-// ----------- Task-4 ----------------
-
 import React from 'react'
-import Task4 from './Task4'
+import HeadingStyle from './HeadingStyle'
+import Dashboard from './page/Dashboard'
+// import "./assets/css/dashboard.module.css"
+import UserStatus from './page/UserStatus'
 
 function App() {
   return (
     <div>
-      <Task4/>
+      <HeadingStyle/><hr />
+      <Dashboard/><hr />
+      <UserStatus status={'true'}/>
+      <UserStatus/>
+      <UserStatus status/><hr />
     </div>
   )
 }
 
 export default App
+
+
+
+// ----------- Task-4 ----------------
+
+// import React from 'react'
+// import Task4 from './Task4'
+
+// function App() {
+//   return (
+//     <div>
+//       <Task4/>
+//     </div>
+//   )
+// }
+
+// export default App
