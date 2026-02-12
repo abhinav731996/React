@@ -4,12 +4,14 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import JSXrule from "./JSXrule.jsx"
 import "bootstrap/dist/css/bootstrap.css"
+import App_OLD from './App_OLD.jsx'
 // import "../node_modules/bootstrap/dist/css/bootstrap.css"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
     {/* <JSXrule /> */}
+    {/* <App_OLD /> */}
+    <App/>
   </StrictMode>,
 )
 

@@ -1,222 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import JSXrule from './JSXrule'
-import Task1 from './Task1' 
-import SubmitButton from './components/SubmitButton'
-import {PropProfile} from './components/PropProfile'
-import Task2 from './Task2'
-import Task3 from './Task3'
+// import required modules
+import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
 
-// function App() {
-//   const [count, setCount] = useState(0)
+// import requierd pages
+import UserStatus from "./pages/UserStatus";
+import Setting from "./pages/Setting";
+import Dashboard from "./pages/Dashboard";
 
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vite.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
+// import required layout
+import RootLayout from "./layouts/RootLayout";
 
-
-// function App() {
-//    return <JSXrule/>
-  
-// }
-// export default App
-
-
-
-// ------------- TASK-1 ---------------
-
-// function App() {
-//   return <Task1/>
-  
-// }
-// export default App
-
-
-// ---------------- props -----------------
-// function App() {
-//   return( 
-//     <div>
-//       <SubmitButton text="Submit Now" className="primary"/>
-//     </div>
-//     )
-// }
-// export default App
-
-
-// function App() {
-
-//   // String but url
-//     const image = "https://img.freepik.com/premium-vector/business-woman-character-vector-illustration_1133257-2432.jpg?semt=ais_hybrid&w=740&q=80"
-
-//   // String
-//     const name =  "Sahil Kumar"
-
-//   // Number
-//     const age =  33
-
-//   // Bullean or logical type
-//     const online = true
-
-//   // Date
-//     const joinigDate = new Date()
-
-//   // Array
-//     const skills = ["React",  "HTMLAllCollection", "JavaScript"]
-
-//   //Array objects
-//   const experience = [
-//     {id: 1, jobProfile: "Jr Developer", year: 2000},
-//     {id: 2, jobProfile: "Sr Developer", year: 2015},
-//     {id: 3, jobProfile: "Team Lead", year: 2020},
-//   ]
-
-
-//     const handleClick = ()=> {
-//     alert("This is alert from App.jsx")
-//   }
-
-
-//   return( 
-//     <div>
-//       <PropProfile
-//       image = {image}
-//       name = {name}
-//       age = {age}
-//       online = {online}
-//       joinigDate = {joinigDate}
-//       skills = {skills}
-//       experience = {experience}
-//       onclick = {handleClick}
-//       />
-
-//       <button onClick={handleClick}>Click Here</button>
-//     </div>
-//     )
-// }
-// export default App
-
-
-// ------------ Task-2 -------------
-// import React from 'react'
-
-// function App() {
-//   return (
-//     <div>
-//       <Task2/>
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-// ----------- Hooks -------------
-
-// import React from 'react'
-// import Hooks from './Hooks'
-
-// function App() {
-//   return (
-//     <div>
-//       <Hooks/>
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-
-// --------------- Task3 ---------------
-
-// import React from 'react'
-
-// function App() {
-//   return (
-//     <div>
-//       <Task3/>
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-
-// ----------- reducer -----------
-// import React from 'react'
-// import UseReduser from './UseReduser'
-
-// function App() {
-//   return (
-//     <div>
-//       <UseReduser/>
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-// -------------- Styling react app --------------
-
-import React from 'react'
-import HeadingStyle from './HeadingStyle'
-import Dashboard from './page/Dashboard'
-// import "./assets/css/dashboard.module.css"
-import UserStatus from './page/UserStatus'
+// import required pages for authantication
+import SignIn from "./pages/auth/SignIn";
+import SignUp from "./pages/auth/SignUp";
+import ForgotPassword from "./pages/auth/ForgotPassword";
+import AuthLayout from "./layouts/AuthLayout";
 
 function App() {
-  return (
-    <div>
-      <HeadingStyle/><hr />
-      <Dashboard/><hr />
-      <UserStatus status={'true'}/>
-      <UserStatus/>
-      <UserStatus status/><hr />
-    </div>
+
+  const routes = createBrowserRouter(
+    [
+      {path:"/", element:<Dashboard/>},
+      {path:"/userStatus", element:<UserStatus />},
+      {path:"/setting", element:<Setting />}
+    ]
   )
+
+  return (
+
+    // <BrowserRouter>
+    //     <Routes>
+    //       {/* Required routs fro dashboard */}
+    //       <Route element={<RootLayout/>}>
+    //         <Route path="/" element={<Dashboard />} />
+    //         <Route path="/setting" element={<Setting />} />
+    //         <Route path="/userStatus" element={<UserStatus />} />
+    //       </Route>
+
+    //       {/* Required rout for auth pages */}
+    //       <Route element={<AuthLayout/>} >
+    //         <Route path="/signin" element={<SignIn />} />
+    //         <Route path="/signup" element={<SignUp />} />
+    //         <Route path="/forgot-password" element={<ForgotPassword />} />
+    //       </Route>
+    //     </Routes>
+    // </BrowserRouter>
+
+
+    <RouterProvider router={routes}/>
+  );
 }
 
-export default App
-
-
-
-// ----------- Task-4 ----------------
-
-// import React from 'react'
-// import Task4 from './Task4'
-
-// function App() {
-//   return (
-//     <div>
-//       <Task4/>
-//     </div>
-//   )
-// }
-
-// export default App
+export default App;
